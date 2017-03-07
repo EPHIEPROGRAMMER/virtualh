@@ -23,6 +23,15 @@
   text-align: center;
 }
 
+.service {
+  color: black;
+  text-align: center;
+}
+
+.testimony {
+  text-align: center;
+}
+
 .bottomright {
   padding-top: 200px;
   float: right;
@@ -31,6 +40,6 @@
   background-color: black;
 }
 
-.h1 {
+.after {
   text-align: center;
 }
