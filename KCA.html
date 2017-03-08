@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual hostel</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+<body>
+
+<style media="screen">
+    #bacing1{
+        display:none
+    }
+    #bacing2{
+        display:none
+    }
+    #bacing3{
+        display:none
+    }
+    #bachelor{
+        display:none
+    }
+    #thehostel{
+        display:none
+    }
+    #hostel{
+        display:none
+    }
+
+</style>
+
+ <script type="text/javascript">
+ $(document).ready(function(){
+$("li#l1").click(function(){
+$("#bacing1").show();
+$("#bachelor").show();
+$("#bacing2").hide();
+$("#thehostel").hide();
+$("#bacing3").hide();
+$("#hostel").hide();
+});
+
+});
+
+$(document).ready(function(){
+$("li#l2").click(function(){
+$("#bacing2").show();
+$("#thehostel").show();
+$("#bacing1").hide();
+$("#bachelor").hide();
+$("#bacing3").hide();
+$("#hostel").hide();
+});
+
+});
+
+$(document).ready(function(){
+$("li#l3").click(function(){
+$("#bacing 3").show();
+$("#hostel").show();
+$("#bacing1").hide();
+$("#bachelor").hide();
+$("#bacing2").hide();
+$("#thehostel").hide();
+});
+
+});
+ </script>
+
+
+<style media="screen">
+    #b1{background-color: red;}
+</style>
+
+<div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
+
+
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/black.jpg" alt="sometext" style="width:100%; height:350px">
+              <div class="carousel-caption">
+                <h1>VIRTUAL HOSTELS</h1>
+                <p>Enter as strangers, leave as friends.</p>
+              </div>
+            </div>
+
+
+           <div class="item">
+              <img src="img/design.jpg" alt="sometext" style="width:100%; height:350px">
+              <div class="carousel-caption">
+                <h1>VIRTUAL HOSTELS</h1>
+                <p>Are you a Dreamer?</p>
+              </div>
+            </div>
+
+
+            <div class="item">
+              <P><img src="img/dreams.jpg" alt="sometext" style="width:50%; height:350px"><img src="img/white.jpg" alt="..." style="width:50%; height:350px">
+                <div class="carousel-caption">
+              </P>
+              <h1>VIRTUAL HOSTELS</h1>
+              <p>The place you would rather be.</p>
+              </div>
+            </div>
+
+
+            <div class="item">
+              <img src="img/bklogo.jpg" alt="sometext" style="width:100%; height:350px">
+              <div class="carousel-caption">
+                <h1 style="color:black">SOCIAL NETWORKING</h1>
+                <p style="color:black;">Let Me Make You Global</p>
+              </div>
+            </div>
+         </div>
+
+
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+   </div>
+ </div>
+ </head>
+
+
+<div class="thumbnail">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-4">
+<h2><b>KCA HOSTELS</b></h2>
+    <p>Available Hostels.</p>
+     <div class="hostels">
+  <ol>
+   <li id="l1"><a href="#"><b>The Mirvins Hostel</b></a></li><br>
+    <li id="l2"><a href="#"><b>St Claires Ladies Hostel </b> </a></li><br>
+     <li id="l2"><a href="#"><b>Gardenia Men's Hostel</b></a></li><br>
+    </ol>
+  </div>
+  </div>
+
+
+
+  <div class="col-sm-3">
+ <div id="bacing1">
+ <marquee scrollamount="5"
+direction="left"
+behavior="alternate">
+<p>
+<img src="img/kca1.jpg" style="width:304px;height:228px"> <img src="img/kca2.jpg" style="width:304px;height:228px"><img src="img/kca3.jpg" style="width:304px;height:228px"> <img src="img/kca4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div>
+
+<div id="bacing2">
+ <marquee scrollamount="5"
+direction="left"
+behavior="alternate">
+<p>
+<img src="img/eger1.jpg" style="width:304px;height:228px"> <img src="img/eger2.jpg" style="width:304px;height:228px"><img src="img/eger3.jpg" style="width:304px;height:228px"> <img src="img/eger4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div>
+
+
+<div id="bacing3">
+ <marquee scrollamount="5"
+direction="left"
+behavior="alternate">
+<p>
+<img src="img/mmu1.jpg" style="width:304px;height:228px"><img src="img/mmu2.jpg" style="width:304px;height:228px"><img src="img/mmu3.jpg" style="width:304px;height:228px"><img src="img/mmu4.jpg" style="width:304px;height:228px">
+</p>
+</marquee>
+</div>
+    </div>
+
+
+     <div class="col-sm-3"></div>
+     <div id="bachelor">
+<p><h2>The Mirvins Hostel</h2></p>
+<p> <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View More</button>
+    <div id="demo" class="collapse">
+    The Mirvins Hostels is a stress free environment with all the facilities that promote and support your study and academic growth.
+We offer budget accommodation at very competitive rates, for both long and short stay with the following facilities/services:
+</div>
+• Breakfast, afternoon coffee/tea and dinner served daily
+• Lunch during weekends and public holidays only
+• Accommodation is mainly special single rooms
+• Bed and mattress
+Accommodation fees - per semester (3months) From May 2016
+price:Ksh 3750</p> <span><a href="#"><button id="b1" type="button" class="btn btn-success">BOOK NOW</button></a></span>
+</div>
+
+
+<div id="thehostel">
+<p><h2>St Claires Ladies Hostel</h2></p>
+<p><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">View More</button>
+<div id="demo1" class="collapse">
+    St. Claire’s is a ladies hostel. It is situated at Section 58 opposite state house, Nakuru. It’s accessible from town and other educational institutions that are within Nakuru town and its environs. It’s a walking distance from Nakuru bus stage.
+The hostel is managed by a sister hence high discipline levels.</div>
+Prices per room:
+Single (special) – ksh.10,000 per month
+Two sharing – ksh.8,000 per month
+Four sharing – ksh.4,500 per month
+
+Meals provided:
+Breakfast
+Supper
+</p><span><a href="#"><button id="b1" type="button" class="btn btn-success">BOOK NOW</button></a></span>
+</div>
+<br>
+
+<div id="hostel">
+<p><h2>Gardenia Men's Hostel</h2></p>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">View More</button>
+    <div id="demo2" class="collapse">
+    Located in Bogani Road Kasuku Close in a secure environment, very conducive for learning.</div>
+<p>Facilities:
+- Internet.
+- DSTV.
+- Meals (breakfast & dinner).
+price:Ksh 3750</p><span><a href="#"><button id="b1" type="button" class="btn btn-success">BOOK NOW</button></a></span>
+</div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>

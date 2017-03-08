@@ -10217,4 +10217,8 @@ if ( !noGlobal ) {
 
 
 return jQuery;
+<<<<<<< HEAD
 } );
+=======
+} );
+>>>>>>> ff07905615138c8a7d38c6d6bc1abacbbbfd007b
