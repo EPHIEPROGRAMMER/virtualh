@@ -31,6 +31,78 @@
         display:none
     }
 
+
+    /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+}
+div #form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 </style>
 
  <script type="text/javascript">
@@ -69,6 +141,30 @@ $("#thehostel").hide();
 });
 
 });
+
+
+// Get the modal
+$(document).ready(function(){
+var modal = document.getElementById('myModal');
+// Get the button that opens the modal
+var btn = document.getElementsByClassName("b1")[-1,0,1];
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+});
  </script>
 
 
@@ -103,7 +199,7 @@ $("#thehostel").hide();
               <img src="img/design.jpg" alt="sometext" style="width:100%; height:350px">
               <div class="carousel-caption">
                 <h1>VIRTUAL HOSTELS</h1>
-                <p>Are you a Dreamer?</p>
+                <p>Apart from ordinary.</p>
               </div>
             </div>
 
@@ -119,10 +215,10 @@ $("#thehostel").hide();
 
 
             <div class="item">
-              <img src="img/bklogo.jpg" alt="sometext" style="width:100%; height:350px">
+              <img src="img/brown.jpg" alt="sometext" style="width:100%; height:350px">
               <div class="carousel-caption">
-                <h1 style="color:black">SOCIAL NETWORKING</h1>
-                <p style="color:black;">Let Me Make You Global</p>
+                <h1>VIRTUAL HOSTELS</h1>
+                <p>Let us make you Home</p>
               </div>
             </div>
          </div>
@@ -164,9 +260,10 @@ $("#thehostel").hide();
  <div id="bacing1">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
-<img src="img/kca1.jpg" style="width:304px;height:228px"> <img src="img/kca2.jpg" style="width:304px;height:228px"><img src="img/kca3.jpg" style="width:304px;height:228px"> <img src="img/kca4.jpg" style="width:304px;height:228px">
+<img src="img/kca1.jpg" style="width:304px;height:228px"><img src="img/kca2.jpg" style="width:304px;height:228px">
+<img src="img/kca3.jpg" style="width:304px;height:228px"> <img src="img/kca4.jpg" style="width:304px;height:228px">
 </p>
 </marquee>
 </div>
@@ -174,9 +271,10 @@ behavior="alternate">
 <div id="bacing2">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
-<img src="img/eger1.jpg" style="width:304px;height:228px"> <img src="img/eger2.jpg" style="width:304px;height:228px"><img src="img/eger3.jpg" style="width:304px;height:228px"> <img src="img/eger4.jpg" style="width:304px;height:228px">
+<img src="img/eger1.jpg" style="width:304px;height:228px"> <img src="img/eger2.jpg" style="width:304px;height:228px">
+<img src="img/eger3.jpg" style="width:304px;height:228px"> <img src="img/eger4.jpg" style="width:304px;height:228px">
 </p>
 </marquee>
 </div>
@@ -185,9 +283,10 @@ behavior="alternate">
 <div id="bacing3">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
-<img src="img/mmu1.jpg" style="width:304px;height:228px"><img src="img/mmu2.jpg" style="width:304px;height:228px"><img src="img/mmu3.jpg" style="width:304px;height:228px"><img src="img/mmu4.jpg" style="width:304px;height:228px">
+<img src="img/mmu1.jpg" style="width:304px;height:228px"><img src="img/mmu2.jpg" style="width:304px;height:228px">
+<img src="img/mmu3.jpg" style="width:304px;height:228px"><img src="img/mmu4.jpg" style="width:304px;height:228px">
 </p>
 </marquee>
 </div>
@@ -207,7 +306,7 @@ We offer budget accommodation at very competitive rates, for both long and short
 • Accommodation is mainly special single rooms
 • Bed and mattress
 Accommodation fees - per semester (3months) From May 2016
-price:Ksh 3750</p> <span><a href="#"><button id="b1" type="button" class="btn btn-success">BOOK NOW</button></a></span>
+price:Ksh 3750</p> <span><a href="#myModal"><button  type="button" class="b1">BOOK NOW</button></a></span>
 </div>
 
 
@@ -225,12 +324,13 @@ Four sharing – ksh.4,500 per month
 Meals provided:
 Breakfast
 Supper
-</p><span><a href="#"><button id="b1" type="button" class="btn btn-success">BOOK NOW</button></a></span>
+</p><span><a href="#myModal"><button class="b1" type="button" >BOOK NOW</button></a></span>
 </div>
 <br>
 
+
 <div id="hostel">
-<p><h2>Gardenia Men's Hostel</h2></p>
+<p><h2>Agnes ladies Hostel</h2></p>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">View More</button>
     <div id="demo2" class="collapse">
     Located in Bogani Road Kasuku Close in a secure environment, very conducive for learning.</div>
@@ -238,12 +338,49 @@ Supper
 - Internet.
 - DSTV.
 - Meals (breakfast & dinner).
-price:Ksh 3750</p><span><a href="#"><button id="b1" type="button" class="btn btn-success">BOOK NOW</button></a></span>
+price:Ksh 3750</p><span><a href="#myModal"><button  type="button" class="b1">BOOK NOW</button></a></span>
 </div>
 </div>
 </div>
 
 
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p><h1>Fill Out This Form</h1></p>
+
+<div id="form">
+  <form action="/action_page.php">
+    <label for="fname">Your Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="country">Gender</label>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+     <input type="radio" name="gender" value="female"> Female<br>
+
+
+    <label for="country">Institution</label>
+    <select id="country" name="country">
+      <option value="australia">UON</option>
+      <option value="canada">KCA</option>
+      <option value="usa">KU</option>
+      <option value="usa">JKUAT</option>
+    </select>
+
+    <label for="lname">ID No</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your ID No">
+
+    <label for="lname">Telephone No</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Tell No">
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+</div>
 
 
 </body>
