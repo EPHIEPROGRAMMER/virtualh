@@ -1,14 +1,60 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .first {
   background-color: black;
   height: 230px;
   background-image: ul(../img/bkg.jpg);
   color: white;
+=======
+.first {
+  padding-top: 200px;
+  height: 250px;
+  background-color: #303030;
+}
+
+.topper {
+  padding-top: 200px;
+  float: right;
+  height: 250px;
+  width: 100%;
+  background-color: #303030;
+}
+
+.topicons {
+  background-color: white
+}
+
+.container {
+  width: 100%;
+}
+
+.containerc {
+  width: 100%;
+  background-image: url(../img/back.jpg);
+  height: 100px;
+  padding-left: 5px;
+}
+
+.toprght {
+  background-color: #303030;
+  /*max-height: 10px;*/
+  color: red;
+  width: 100%;
+  float: left;
+}
+
+.col-md-4 {
+  float: right;
+>>>>>>> 36280e5c0fb0266e3ba6b55755e5c1b75081f04e
 }
 
 .car {
   /*width: 100px;*/
   height: 350px;
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> 36280e5c0fb0266e3ba6b55755e5c1b75081f04e
 }
 
 .topright {
@@ -24,11 +70,34 @@
   text-align: center;
 }
 
+<<<<<<< HEAD
 .bottomright {
+=======
+.service {
+  color: black;
+  text-align: center;
+}
+
+.testimony {
+  text-align: center;
+}
+
+.mission {
+  text-align: center;
+}
+
+.containerd {
+  width: 100%;
+  padding-left: 5px;
+}
+
+.bttm {
+>>>>>>> 36280e5c0fb0266e3ba6b55755e5c1b75081f04e
   padding-top: 200px;
   float: right;
   height: 250px;
   width: 100%;
+<<<<<<< HEAD
   background-color: black;
 }
 
@@ -40,3 +109,11 @@
 	float: right;
 }
 >>>>>>> 6f995f2230de99aa0b17d71093b07bcd4a92d3c1
+=======
+  background-color: #303030;
+}
+
+.after {
+  text-align: center;
+}
+>>>>>>> 36280e5c0fb0266e3ba6b55755e5c1b75081f04e
