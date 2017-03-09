@@ -42,33 +42,50 @@
    }
    #happyhostel{
     display: none;
-    padding: 2cm;
+    padding-top: 10px;
+    height: 430px
   }
    #nzurihostel{
     display: none;
+    padding-top: 10px;
+    height: 430px;
   }
+
    #rahahostel{
     display: none;
+     padding-top: 10px;
+    height: 430px;
   }
+
   #safihostel{
     display: none;
-    padding: 2cm;
+     padding-top: 10px;
+    height: 430px;
   }
    #nyumbanihostel{
     display: none;
+     padding-top: 20px;
+    height: 400px;
   }
    #pemahostel{
     display: none;
+     padding-top: 10px;
+    height: 430px;
   }
   #homehostel{
     display: none;
-    padding: 2cm;
+     padding-top: 10px;
+    height: 430px;
   }
    #nicehostel{
     display: none;
+     padding-top: 10px;
+    height: 430px;
   }
    #exellenthostel{
     display: none;
+     padding-top: 10px;
+    height: 430px;
   }
 
 /* The Modal (background) */
@@ -139,10 +156,13 @@ input[type=submit]:hover {
 
 div #form{
     border-radius: 5px;
-    background-color: #f2f2f2 ;
+    background-color: f2f2f2;
     padding: 20px;
 }
 
+#form{
+  background: pink;
+}
 </style>
 
 
@@ -371,20 +391,26 @@ $(document).ready(function(){
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementsByClassName("b1")[0];
+var btns = $(".b");
+
+
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spans = $(".close");
 
 // When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+// btns.forEach(function (btn) {
+  btns.click(function() {
+      modal.style.display = "block";
+  });
+// });
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+// spans.forEach(function(span) {
+  spans.click(function() {
+      modal.style.display = "none";
+  });
+// });
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -392,7 +418,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-})
+});
 </script>
 
 
@@ -457,12 +483,12 @@ window.onclick = function(event) {
     <div class="row">
     <div class="col-sm-4">
 <h2><b>MOI HOSTELS</b></h2>
-    <p>Available Hostels.</p>
+   <h3> <p>Available Hostels.</p></h3>
      <div class="hostels">
   <ol id="01">
-   <li id="l1"><a href="#"><b>Happy Lounge Hostel</b></a></li><br>
-    <li id="l2"><a href="#"><b>Nzuri Men Hostel</b> </a></li><br>
-     <li id="l3"><a href="#"><b>Raha Girls</b></a></li><br>
+   <li id="l1"><a href="#"><b>Hilton View Lounge Hostel</b></a></li><br>
+    <li id="l2"><a href="#"><b>YMC Men Hostel</b> </a></li><br>
+     <li id="l3"><a href="#"><b>Rapid Girls</b></a></li><br>
      <li id="l4"><a href="#"><b>Safi Lounge Hostel</b></a></li><br>
     <li id="l5"><a href="#"><b>Nyumbani Men Hostel</b> </a></li><br>
      <li id="l6"><a href="#"><b>Pema Girls</b></a></li><br>
@@ -474,30 +500,31 @@ window.onclick = function(event) {
   </div>
   <div class="col-sm-3">
   <!-- start of marquee -->
+ <br>
  <div id="happyimg">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
 <img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
 <img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
 </p>
 </marquee>
-</div>
+</div><br>
 <div id="nzuriimg">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
 <img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
 <img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
 </p>
 </marquee>
-</div>
+</div><br><br>
 <div id="rahaimg">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
 <img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
 <img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
@@ -507,17 +534,17 @@ behavior="alternate">
 <div id="safiimg">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
 <img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
 <img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
 </p>
 </marquee>
-</div>
+</div><br><br><br>
 <div id="nyumbaniimg">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
 <img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
 <img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
@@ -527,7 +554,7 @@ behavior="alternate">
 <div id="pemaimg">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
 <img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
 <img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
@@ -537,7 +564,7 @@ behavior="alternate">
 <div id="homeimg">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
 <img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
 <img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
@@ -547,7 +574,7 @@ behavior="alternate">
 <div id="niceimg">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
 <img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
 <img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
@@ -557,7 +584,7 @@ behavior="alternate">
 <div id="exellentimg">
  <marquee scrollamount="5"
 direction="left"
-behavior="alternate">
+behavior="scroll">
 <p>
 <img src="img/uon1.jpg" style="width:304px;height:228px"> <img src="img/uon2.jpg" style="width:304px;height:228px">
 <img src="img/uon3.jpg" style="width:304px;height:228px"> <img src="img/uon4.jpg" style="width:304px;height:228px">
@@ -567,48 +594,48 @@ behavior="alternate">
 <!-- end of marquee -->
      </div>
      <div class="col-sm-3"></div>
+
  <!--  start of description -->
-<div id="happyhostel">
-<p><h2>Happy Lounge Hostel</h2></p>
+<div id="happyhostel" style="background-color: pink; color: purple">
+<p><h2>Hilton View Lounge Hostel</h2></p>
 <p> Cost: Ksh. 6,500</p>
 <p> DSTV Available</p>
 <p> Wi-fi Available</p>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View More</button>
   <div id="demo" class="collapse">
-The hostel is ideal for students studying in the CBD. It is located in Nairobi, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
-- 4 sharing 9500.
+The hostel is ideal for students studying in the CBD. It is located in Nairobi, along university way. It has the following features;
+- 4 sharing 6500.
 - 2 sharing 11000.
 - Single room 12000.
 Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
-price:Ksh 3750
+
 </div>
 <!-- book now -->
 <!-- <span> <a href="#"><button type="button" name="button">BOOK NOW</button></a></span> -->
-<span><a href="#myModal"><button  type="button" class="b1">BOOK NOW</button></a></span>
+<span><a href="#myModal"><button  type="button" class="b">BOOK NOW</button></a></span>
 </div>
-<br><br><br>
-<!-- Nzuri hostel -->
-<div id="nzurihostel">
-<p><h2>Nzuri Lounge Hostel</h2></p>
+<br>
+<!-- YMC hostel -->
+<div id="nzurihostel" style="background-color: lightblue; color: purple">
+<p><h2>YMC Lounge Hostel</h2></p>
 <p> Cost: Ksh. 9,500</p>
 <p> DSTV Available</p>
 <p> Hot Shower Available</p>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">View More</button>
   <div id="demo1" class="collapse">
-The hostel is ideal for students studying in the CBD or in Strathmore, Daystar and Riara University. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
+The hostel is ideal for students studying in the CBD or its (CBD) environs. Located in Nairobi West, on the crossroad of Muthaiti Avenue with Gandhi Road. It has the following features;
 - 4 sharing 9500.
 - 2 sharing 11000.
 - Single room 12000.
-Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
-price:Ksh 3750
+Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast and dinner offered.
 </div>
 <!-- book now -->
-<span> <a href="#myModal"><button type="button" class="b1" name="button">BOOK NOW</button></a></span>
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
 </div>
 <br><br>
-<!-- Raha Hostel -->
-<div id="rahahostel">
-<p><h2>Raha Lounge Hostel</h2></p>
+<!-- Rapid Hostel -->
+<div id="rahahostel" style="background-color: purple; color: gold">
+<p><h2>Rapid Lounge Hostel</h2></p>
 <p> Cost: Ksh. 4,500</p>
 <p> Good Meals</p>
 <p> Hot Shower Available</p>
@@ -623,11 +650,11 @@ Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
 price:Ksh 3750
 </div>
 <!-- book now -->
-<span> <a href="div#myModal"><button type="button" name="button">BOOK NOW</button></a></span>
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
 
 </div>
 <!-- safi hostel -->
-<div id="safihostel">
+<div id="safihostel" style="background-color: purple; color: blue">
 <p><h2>Safi Lounge Hostel</h2></p>
 <p> Cost: Ksh. 6,500</p>
 <p> DSTV Available</p>
@@ -642,12 +669,12 @@ Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
 price:Ksh 3750
 </div>
 <!-- book now -->
-<span> <a href="#"><button type="button" name="button">BOOK NOW</button></a></span>
+<span> <a href="#"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
 
 </div>
 <br><br><br>
 <!-- Nyumbani hostel -->
-<div id="nyumbanihostel">
+<div id="nyumbanihostel" style="background-color: gold; color: blue">
 <p><h2>Nyumbani Lounge Hostel</h2></p>
 <p> Cost: Ksh. 9,500</p>
 <p> DSTV Available</p>
@@ -662,8 +689,7 @@ Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
 price:Ksh 3750
 </div>
 <!-- book now -->
-<span> <a href="#"><button type="button" name="button">BOOK NOW</button></a></span>
-</div>
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span></div>
 <br><br>
 <!-- pema Hostel -->
 <div id="pemahostel">
@@ -682,8 +708,7 @@ Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
 price:Ksh 3750
 </div>
 <!-- book now -->
-<span> <a href="#"><button type="button" name="button">BOOK NOW</button></a></span>
-</div>
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span></div>
 <!-- home hostel -->
 <div id="homehostel">
 <p><h2>Home Lounge Hostel</h2></p>
@@ -700,7 +725,7 @@ Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
 price:Ksh 3750
 </div>
 <!-- book now -->
-<span> <a href="#myModal"><button type="button" name="button">BOOK NOW</button></a></span>
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
 
 </div>
 <br><br><br>
@@ -720,7 +745,7 @@ Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
 price:Ksh 3750
 </div>
 <!-- book now -->
-<span> <a href="#"><button class="b2" type="button" name="button">BOOK NOW</button></a></span>
+<span> <a href="#"><button class="b" type="button" name="button">BOOK NOW</button></a></span>
 </div>
 <br><br>
 <!-- Exellent Hostel -->
@@ -740,8 +765,7 @@ Has Wi-Fi, hot shower, fully furnished with caretaker and breakfast offered
 price:Ksh 3750
 </div>
 <!-- book now -->
-<span> <a href="#"><button  type="button" name="button">BOOK NOW</button></a></span>
-
+<span> <a href="#myModal"><button type="button" class="b" name="button">BOOK NOW</button></a></span>
 </div>
 
 <!-- end of description -->

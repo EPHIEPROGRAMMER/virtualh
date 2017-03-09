@@ -102,6 +102,32 @@ div #form{
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+
+}
+#form{
+    background-color: lightblue;
+}
+
+#bachelor{
+    background-color:lightgreen;
+    padding: 100px;
+    padding-top: 20px;
+}
+#thehostel{
+    background-color: pink;
+    padding: 100px;
+    padding-top: 40px;
+}
+#hostel{
+    background-color: silver;
+    padding: 160px;
+    padding-top: 40px;
+}
+#bacing3{
+    padding-bottom: 50px;
+}
+}
+
 }
 </style>
 
@@ -132,7 +158,7 @@ $("#hostel").hide();
 
 $(document).ready(function(){
 $("li#l3").click(function(){
-$("#bacing 3").show();
+$("#bacing3").show();
 $("#hostel").show();
 $("#bacing1").hide();
 $("#bachelor").hide();
@@ -143,26 +169,38 @@ $("#thehostel").hide();
 });
 
 
+// form js
 // Get the modal
 $(document).ready(function(){
 var modal = document.getElementById('myModal');
+
 // Get the button that opens the modal
-var btn = document.getElementsByClassName("b1")[-1,0,1];
+var btns = $(".b1");
+
+
+
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spans = $(".close");
+
 // When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+// btns.forEach(function (btn) {
+ btns.click(function() {
+     modal.style.display = "block";
+ });
+// });
+
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+// spans.forEach(function(span) {
+ spans.click(function() {
+     modal.style.display = "none";
+ });
+// });
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
+   if (event.target == modal) {
+       modal.style.display = "none";
+   }
 }
 });
  </script>
@@ -187,7 +225,7 @@ window.onclick = function(event) {
 
           <div class="carousel-inner" role="listbox">
             <div class="item active">
-              <img src="img/black.jpg" alt="sometext" style="width:100%; height:350px">
+              <img src="img/jkuat.jpg" alt="sometext" style="width:100%; height:350px">
               <div class="carousel-caption">
                 <h1>VIRTUAL HOSTELS</h1>
                 <p>Enter as strangers, leave as friends.</p>
@@ -196,7 +234,7 @@ window.onclick = function(event) {
 
 
            <div class="item">
-              <img src="img/design.jpg" alt="sometext" style="width:100%; height:350px">
+              <img src="img/jkuat1.jpg" alt="sometext" style="width:100%; height:350px">
               <div class="carousel-caption">
                 <h1>VIRTUAL HOSTELS</h1>
                 <p>Apart from ordinary.</p>
@@ -205,7 +243,7 @@ window.onclick = function(event) {
 
 
             <div class="item">
-              <P><img src="img/dreams.jpg" alt="sometext" style="width:50%; height:350px"><img src="img/white.jpg" alt="..." style="width:50%; height:350px">
+              <P><img src="img/jkuat3.jpeg" alt="sometext" style="width:50%; height:350px"><img src="img/white.jpg" alt="..." style="width:50%; height:350px">
                 <div class="carousel-caption">
               </P>
               <h1>VIRTUAL HOSTELS</h1>
@@ -215,7 +253,7 @@ window.onclick = function(event) {
 
 
             <div class="item">
-              <img src="img/brown.jpg" alt="sometext" style="width:100%; height:350px">
+              <img src="img/jkuat4.jpg" alt="sometext" style="width:100%; height:350px">
               <div class="carousel-caption">
                 <h1>VIRTUAL HOSTELS</h1>
                 <p>Let us make you Home</p>
@@ -249,7 +287,7 @@ window.onclick = function(event) {
   <ol>
    <li id="l1"><a href="#"><b>The Mirvins Hostel</b></a></li><br>
     <li id="l2"><a href="#"><b>St Claires Ladies Hostel </b> </a></li><br>
-     <li id="l2"><a href="#"><b>Gardenia Men's Hostel</b></a></li><br>
+     <li id="l3"><a href="#"><b>Gardenia Men's Hostel</b></a></li><br>
     </ol>
   </div>
   </div>
@@ -268,6 +306,7 @@ behavior="scroll">
 </marquee>
 </div>
 
+<br><br>
 <div id="bacing2">
  <marquee scrollamount="5"
 direction="left"
@@ -279,7 +318,7 @@ behavior="scroll">
 </marquee>
 </div>
 
-
+<br><br>
 <div id="bacing3">
  <marquee scrollamount="5"
 direction="left"
@@ -310,6 +349,7 @@ price:Ksh 3750</p> <span><a href="#myModal"><button  type="button" class="b1">BO
 </div>
 
 
+
 <div id="thehostel">
 <p><h2>St Claires Ladies Hostel</h2></p>
 <p><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">View More</button>
@@ -330,11 +370,10 @@ Supper
 
 
 <div id="hostel">
-<p><h2>Agnes ladies Hostel</h2></p>
+<p><h2>Gardenia Men's Hostel</h2></p>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">View More</button>
-    <div id="demo2" class="collapse">
-    Located in Bogani Road Kasuku Close in a secure environment, very conducive for learning.</div>
-<p>Facilities:
+    <div id="demo2" class="collapse">Located in Bogani Road Kasuku Close in a secure environment, very conducive for learning.</div>
+ <p>Facilities:
 - Internet.
 - DSTV.
 - Meals (breakfast & dinner).
